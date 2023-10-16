@@ -22,7 +22,7 @@
 
     <!-- 指定映射文件 -->
     <mappers>
-        <mapper resource="EmpMapper.xml"/>
+        <mapper resource="mapper/EmpMapper.xml"/>
     </mappers>
 
 </configuration>

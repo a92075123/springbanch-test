@@ -23,8 +23,8 @@ public class FlowS2 {
 
 
     @Bean
-    public Flow flowA(){
-        return new FlowBuilder<Flow>("flowA")
+    public Flow flowS2A(){
+        return new FlowBuilder<Flow>("flowS2A")
                 .start(stepA())
                 .next(stepB())
                 .next(stepC())
@@ -125,8 +125,7 @@ public class FlowS2 {
             @Override
             public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception {
 
-
-
+                System.out.println("=======taskletB2=====");
 
                 return RepeatStatus.FINISHED;
             }
